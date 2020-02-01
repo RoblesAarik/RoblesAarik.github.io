@@ -60,7 +60,18 @@ form {
   width: 200px;
 }
 
-#random {
+#featured {
+  width: max-content;
+  height: max-content;
+}
+
+#featured div {
+  display: inline-block;
   width: 500px;
   height: 400px;
+}
+
+li {
+  list-style: none;
+  font-size: 35px;
 }
