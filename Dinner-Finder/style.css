@@ -1,0 +1,33 @@
+* {
+  border: 1px solid orange;
+}
+#navBar {
+  background-color: green;
+  color: white;
+}
+
+.country {
+  width: 250px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.country:hover {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#random {
+  width: 300px;
+  height: 300px;
+}
