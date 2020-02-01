@@ -13,22 +13,25 @@
     <title>Dinner Finder</title>
   </head>
   <body>
-    <h1>Welcome to Food Finder</h1>
-    <img
-      src="https://cdn.myanimelist.net/s/common/uploaded_files/1468184569-d63e18aaf3c46000a476171e3557dfc4.png"
-      alt="Food Pic"
-    />
+    <div class="header">
+      <h1 class="center">Welcome to Food Finder</h1>
+      <img
+        src="https://cdn.myanimelist.net/s/common/uploaded_files/1468184569-d63e18aaf3c46000a476171e3557dfc4.png"
+        alt="Food Pic"
+        style="width: 100%;"
+      />
+    </div>
     <div id="navBar">
       <nav>
         <h1 class="country">Mexican</h1>
         <h1 class="country">Italian</h1>
         <h1 class="country">Chinese</h1>
-        <h1 class="country">French</h1>
+        <h1 class="country">Japanese</h1>
       </nav>
     </div>
     <form>
-      <input type="text" />
-      <input type="submit" value="Get Recipe" />
+      <input id="search" type="text" placeholder="Seach by ingredient" />
+      <input id="submit" type="submit" value="Get Recipe" />
     </form>
     <div id="featured">
       <h3>Featured Recipe</h3>

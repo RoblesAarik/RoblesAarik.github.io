@@ -1,8 +1,26 @@
-* {
+/* * {
   border: 1px solid orange;
+} */
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 100%;
 }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 48px;
+  width: 500px;
+}
+
 #navBar {
-  background-color: green;
+  background-color: lightblue;
   color: white;
 }
 
@@ -10,7 +28,7 @@
   width: 200px;
   text-align: center;
   border: 1px solid white;
-  background-color: green;
+  background-color: lightblue;
   color: white;
   border-radius: 10px;
   font-family: Helvetica, Arial, sans-serif;
@@ -27,17 +45,22 @@ nav {
   justify-content: space-around;
 }
 
+form {
+  text-align: center;
+  padding: 15px;
+}
+
+#submit {
+  display: inline-block;
+  width: 200px;
+  font-size: 24px;
+}
+
+#search {
+  width: 200px;
+}
+
 #random {
   width: 500px;
   height: 400px;
-}
-
-form {
-  text-align: center;
-}
-
-input {
-  width: 200px;
-  font-size: 24px;
-  font-family: Helvetica, Arial, sans-serif;
 }
