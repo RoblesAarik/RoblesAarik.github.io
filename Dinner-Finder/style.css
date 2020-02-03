@@ -71,8 +71,7 @@ form {
   height: 400px;
 }
 
-li {
-  list-style: none;
+.dish {
   font-size: 35px;
 }
 
@@ -90,7 +89,7 @@ li {
 
 #modal-text {
   background-color: white;
-  height: 350px;
+  height: fit-content;
   width: 550px;
   border-radius: 2px;
   margin: 150px auto;
@@ -98,4 +97,19 @@ li {
   padding: 2%;
   line-height: 120%;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.dish {
+  padding-top: 30px;
+}
+
+.listPic:hover {
+  border: 5px solid lightblue;
 }

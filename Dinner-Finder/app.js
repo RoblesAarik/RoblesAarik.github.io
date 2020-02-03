@@ -27,25 +27,26 @@ $(() => {
 
   // hides the Current list of recipes
   const hideCurrentList = () => {
-    if ($("li").text().length > 0) {
-      $("li").hide();
+    if ($(".recipes").text().length > 0) {
+      $(".dish").hide();
       $(".listPic").hide();
     }
   };
 
   // Creates list of recipes
   const createList = data => {
-    for (let i = 0; i <= data.meals.length; i += 1) {
-      let $li = $("<li>")
+    for (let i = 1; i <= data.meals.length; i += 1) {
+      let $div = $("<div>")
         .text(data.meals[`${i}`].strMeal)
-        .attr("id", data.meals[`${i}`].idMeal);
+        .attr("id", data.meals[`${i}`].idMeal)
+        .addClass("dish");
       let $img = $(
         `<img src="${data.meals[`${i}`].strMealThumb}" style='width: 40%;'/>`
       )
         .addClass("listPic")
         .attr("id", data.meals[`${i}`].idMeal);
-      $("ul").append($li);
-      $("ul").append($img);
+      $(".recipes").append($div);
+      $(".recipes").append($img);
     }
   };
 
@@ -98,7 +99,7 @@ $(() => {
   const openModal = () => {
     $modal.css("display", "block");
   };
-  $("ul").on("click", () => {
+  $(".recipes").on("click", () => {
     openModal();
 
     $.ajax({
@@ -108,6 +109,7 @@ $(() => {
     }).then(
       data => {
         console.log(data);
+        modalInfo(data);
       },
       () => {
         console.log("bad");
@@ -118,6 +120,15 @@ $(() => {
   // close modal
   const closeModal = () => {
     $modal.css("display", "none");
+    $(".instruction").text("");
   };
   $closeBtn.on("click", closeModal);
 });
+
+// Modal info
+const modalInfo = data => {
+  let $ingredients = $(".ingredients");
+  let $instructions = $("<p>");
+  $instructions.addClass("instruction").text(data.meals["0"].strInstructions);
+  $("#modal-text").append($instructions);
+};
