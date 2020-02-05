@@ -12,7 +12,7 @@
 .center {
   position: absolute;
   top: 50%;
-  right: -15%;
+  right: -25%;
   transform: translate(-50%, -50%);
   color: lightblue;
   font-size: 48px;
