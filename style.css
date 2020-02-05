@@ -111,3 +111,7 @@ form {
 .listPic {
   border: 10px solid lightblue;
 }
+
+.listPic:hover {
+  filter: grayscale(20%);
+}
