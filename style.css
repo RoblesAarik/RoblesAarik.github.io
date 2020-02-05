@@ -110,7 +110,6 @@ form {
 
 .listPic {
   border: 10px solid lightblue;
-  position: relative;
 }
 
 .listPic:hover {
