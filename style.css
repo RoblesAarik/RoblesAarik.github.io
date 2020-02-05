@@ -6,7 +6,7 @@
 }
 
 .center {
-  position: absolute;
+  position: fixed;
   top: 50%;
   right: -15%;
   transform: translate(-50%, -50%);
@@ -110,6 +110,7 @@ form {
 
 .listPic {
   border: 10px solid lightblue;
+  position: relative;
 }
 
 .listPic:hover {
