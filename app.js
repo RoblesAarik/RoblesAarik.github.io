@@ -71,6 +71,7 @@ const recipeIngredients = data => {
   let $li17 = $("<li>").text(data.meals["0"].strIngredient18);
   let $li18 = $("<li>").text(data.meals["0"].strIngredient19);
   let $li19 = $("<li>").text(data.meals["0"].strIngredient20);
+  $(".ingredients").append($li);
   $(".ingredients").append($li1);
   $(".ingredients").append($li2);
   $(".ingredients").append($li3);
