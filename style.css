@@ -2,13 +2,13 @@
   position: relative;
   text-align: center;
   color: white;
-  max-width: 100%;
+  max-width: fit-content;
 }
 
 .center {
   position: absolute;
   top: 50%;
-  right: -25%;
+  right: -15%;
   transform: translate(-50%, -50%);
   color: lightblue;
   font-size: 48px;
@@ -57,12 +57,14 @@ form {
 }
 
 #featured {
-  width: max-content;
+  text-align: center;
+  width: auto;
   height: max-content;
 }
 
 #featured div {
   display: inline-block;
+  text-align: center;
   width: 500px;
   height: 400px;
 }
@@ -108,13 +110,4 @@ form {
 
 .listPic {
   border: 10px solid lightblue;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.listPic:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
 }

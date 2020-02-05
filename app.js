@@ -4,8 +4,14 @@ $(() => {
   const $modal = $("#modal");
   const $closeBtn = $("#close");
   const openModal = () => {
-    $modal.css("display", "block");
+    if (
+      $(event.target).class == "recipes" ||
+      $(event.target).parents(".recipes").length
+    ) {
+      $modal.css("display", "block");
+    }
   };
+  const $recipes = $(".recipes");
   $(".recipes").on("click", () => {
     openModal();
 
