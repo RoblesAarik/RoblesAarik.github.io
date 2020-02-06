@@ -9,9 +9,10 @@ Uses an API to look for cooking recipes by ingredients or certain countries
 ## Layout
 
 - First page loads two random recipes
-- If nav bar is clicked the page loads recipes by country
-- In the search bar you can search for recipes by ingredient
-- When one of the recipes is clicked a modal will appear with the ingredients and instructions for the dish
+- Theres a nav bar with different countries to choose from
+
+* a search bar and two random featured recipes
+* when nav is clicked or search bar is used new list or recipes appears
 
 ## MVP Deliverables
 
