@@ -9,7 +9,7 @@ Uses an API to look for cooking recipes by ingredients or certain countries
 ## Layout
 
 - First page loads two random recipes
-- If nav bar is clicked the page with recipes by country
+- If nav bar is clicked the page loads recipes by country
 - In the search bar you can search for recipes by ingredient
 - When one of the recipes is clicked a modal will appear with the ingredients and instructions for the dish
 
